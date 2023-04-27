@@ -1,0 +1,118 @@
+/* Global Rules  */
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    /* Primary Colors  */
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+    /* Secondary Colors  */
+    --Dark-gray: hsl(0, 0%, 59%);
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    background-color: var(--Dark-cyan);
+    overflow: hidden;
+    min-height: 100vh;
+}
+
+.background-image {
+    overflow: hidden;
+}
+
+.background-image .top {
+    position: absolute;
+    left: 10%;
+    top: -10%;
+    transform: translate(-50%, -50%);
+}
+
+.background-image .bottom {
+    position: absolute;
+    top: 120%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+}
+
+.card {
+    width: 350px;
+    height: 370px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 30px var(--Dark-grayish-blue);
+}
+
+.card .card-image {
+    height: 200px;
+}
+
+.card .bg {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.card .victor {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+.card .main-text {
+    text-align: center;
+    font-size: 12px;
+    height: 80px;
+    border-bottom: 1px solid var(--Dark-gray);
+}
+
+.card .main-text h2 {
+    color: var(--Very-dark-desaturated-blue);
+    margin-bottom: 10px;
+}
+
+.card .main-text span {
+    color: var(--Dark-grayish-blue);
+    font-weight: 400;
+    margin-left: 5px;
+}
+
+.card .main-text p {
+    color: var(--Dark-grayish-blue);
+    font-size: 15px;
+    margin: 0;
+}
+
+.second-text {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    font-size: 15px;
+}
+
+.second-text h3 {
+    margin-bottom: 0;
+    color: var(--Very-dark-desaturated-blue);
+}
+
+.second-text p {
+    margin-top: 5px;
+    color: var(--Dark-gray);
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+@media (max-width: 767px) {
+    .background-image img {
+        width: 100%;
+    }
+}
